@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'kalman_filter'
-  s.version     = '1.0.0'
-  s.date        = '2016-11-06'
+  s.version     = '1.0.1'
+  s.date        = '2016-11-07'
   s.summary     = "A Ruby implimentation of a Kalman Filter,
     linear quadratic estimator."
   s.description = "Noisy sensor data, approximations in the equations that
@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Joseph Viscomi"]
   s.email       = 'jjviscomi@gmail.com'
   s.files       = ["lib/kalman_filter.rb"]
+  s.required_ruby_version = '>= 1.9.3'
+  s.require_paths = ['lib']
   s.homepage    =
     'https://github.com/jjviscomi/kalman-filter'
   s.license       = 'MIT'
