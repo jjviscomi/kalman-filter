@@ -27,5 +27,5 @@ kf.measurement          # returns the last measurement taken
 # >> 72
 
 kf.value                # returns the current value of the filter
-# >> 69.66666666666667
+# >> 69.67441860465117
 ```
