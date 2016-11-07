@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/kalman_filter.svg)](https://badge.fury.io/rb/kalman_filter)
+
 # kalman-filter
 A ruby implementation of a Kalman filter
 
