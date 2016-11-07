@@ -1,6 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/kalman_filter.svg)](https://badge.fury.io/rb/kalman_filter)
 
-# kalman-filter
+# kalman_filter
 A ruby implementation of a Kalman filter
 
 ### options
@@ -14,9 +14,21 @@ A ruby implementation of a Kalman filter
 kf = KalmanFilter.new process_noise: 0.005, measurement_noise: 0.5
 ```
 
+### install
+```bash
+gem install kalman_filter
+```
+or include it in your Gemfile
+```ruby
+gem 'kalman_filter'
+```
+
+
 ### use
 
 ```ruby
+require 'kalman_filter'
+
 kf = KalmanFilter.new process_noise: 0.005, measurement_noise: 0.5
 
 kf.measurement = 65     # records a new measurement into the filter, and returns the new value of the filter
