@@ -3,6 +3,14 @@
 # kalman_filter
 A ruby implementation of a Kalman filter
 
+### install
+```bash
+gem install kalman_filter
+```
+or include it in your Gemfile
+```ruby
+gem 'kalman_filter'
+```
 ### options
 
 ```ruby
@@ -13,16 +21,6 @@ A ruby implementation of a Kalman filter
   
 kf = KalmanFilter.new process_noise: 0.005, measurement_noise: 0.5
 ```
-
-### install
-```bash
-gem install kalman_filter
-```
-or include it in your Gemfile
-```ruby
-gem 'kalman_filter'
-```
-
 
 ### use
 
