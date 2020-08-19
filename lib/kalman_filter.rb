@@ -58,14 +58,14 @@ class KalmanFilter
 
     if value.nil?
       self.value       = new_measurement / measurement_vector
-      @covariance  = 1.0 / measurement_vector
+      self.covariance  = 1.0 / measurement_vector
     else
 
       # Prediction
       predicted_x =
         (state_vector * value) + (control_vector * control)
       predicted_covariance =
-        ((state_vector * @covariance) * state_vector) + process_noise
+        ((state_vector * covariance) * state_vector) + process_noise
 
       # Gain
       kalman_gain = predicted_covariance * measurement_vector * (1 /
@@ -73,7 +73,7 @@ class KalmanFilter
           measurement_vector) + measurement_noise))
 
       # Correction
-      @covariance = predicted_covariance -
+      self.covariance = predicted_covariance -
         (kalman_gain * measurement_vector * predicted_covariance)
 
       self.value = predicted_x + kalman_gain *
