@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'kalman_filter'
-  s.version     = '1.0.1'
+  s.version     = '1.0.2'
   s.date        = '2016-11-07'
   s.summary     = "A Ruby implimentation of a Kalman Filter,
     linear quadratic estimator."
